@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>predmore.me</title>
+    <meta name="description" content="You made it to predmore.me — a calm corner of the internet." />
+    <meta name="theme-color" content="#070911" />
+    <meta property="og:title" content="predmore.me" />
+    <meta property="og:description" content="You made it to predmore.me — a calm corner of the internet." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://predmore.me/" />
+    <meta property="og:image" content="og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="predmore.me" />
+    <meta name="twitter:description" content="You made it to predmore.me — a calm corner of the internet." />
+    <meta name="twitter:image" content="og-image.png" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background" aria-hidden="true"></div>
+    <main class="shell">
+      <header class="hero">
+        <span class="blink" aria-hidden="true"></span>
+        <p class="eyebrow">You found it</p>
+        <h1>predmore.me</h1>
+        <p class="lede">
+          A quiet landing for now. Settle in, take a breath, and know you're in the right place.
+        </p>
+        <p class="whisper">Stay close. Something thoughtful is taking shape behind the scenes.</p>
+      </header>
+    </main>
+    <footer class="footer">
+      <p>&copy; <span id="year"></span> predmore.me</p>
+    </footer>
+    <script>
+      const yearTarget = document.getElementById('year');
+      const currentYear = new Date().getFullYear();
+      if (yearTarget) {
+        yearTarget.textContent = currentYear;
+      }
+    </script>
+  </body>
+</html>
